@@ -10,8 +10,25 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.11.5",
     "@astrojs/check": "^0.8.1",
-    "typescript": "^5.5.3"
+    "@astrojs/react": "^3.6.0",
+    "@astrojs/sitemap": "^3.1.6",
+    "@astrojs/tailwind": "^5.1.0",
+    "@astrojs/vue": "^4.5.0",
+    "@tresjs/core": "^4.2.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "astro": "^4.11.5",
+    "lucia": "^3.2.0",
+    "lucia-adapter-astrodb": "^0.0.9",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.4",
+    "three": "^0.166.1",
+    "typescript": "^5.5.3",
+    "vue": "^3.4.31"
+  },
+  "devDependencies": {
+    "@types/three": "^0.166.0"
   }
 }
