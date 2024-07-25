@@ -15,5 +15,5 @@ export default defineConfig({
     checkOrigin: true
   },
   integrations: [vue(), react(), sitemap(), tailwind(), robotsTxt()],
-  output: "server"
+  output: "static"
 });
