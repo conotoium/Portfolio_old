@@ -9,7 +9,7 @@ import robotsTxt from "astro-robots-txt";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'http://localhost:4322/Portfolio',
+  site: 'https://conotoium.github.io/Portfolio/',
   base: 'Portfolio',
   security: {
     checkOrigin: true
