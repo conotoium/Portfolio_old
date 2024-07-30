@@ -24,6 +24,7 @@
     "astro-embed": "^0.7.2",
     "astro-robots-txt": "^1.0.0",
     "auth-astro": "^4.1.2",
+    "css.gg": "^2.1.1",
     "lucia": "^3.2.0",
     "lucia-adapter-astrodb": "^0.0.9",
     "react": "^18.3.1",

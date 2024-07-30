@@ -1,47 +1,30 @@
 ---
 import { Tweet, Vimeo, YouTube } from 'astro-embed';
+import Layout from '../layouts/Layout.astro';
 ---
-<html class="dark">
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>
-      ContoSearch
-  </title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/siimple-icons/siimple-icons.css" />
-</head>
-<main>
-  <a href="/Portfolio/index"><i class="si-home" style="font-size: 32px;"></i></a>
-    <script>
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-          document.documentElement.classList.add('dark')
-        } else {
-          document.documentElement.classList.remove('dark')
-        }
-        
-        // Whenever the user explicitly chooses light mode
-        localStorage.theme = 'light'
-        
-        // Whenever the user explicitly chooses dark mode
-        localStorage.theme = 'dark'
-        
-        // Whenever the user explicitly chooses to respect the OS preference
-        localStorage.removeItem('theme')
-      </script>
-  <YouTube
-  id="dQw4w9WgXcQ"
-  poster="https://images-assets.nasa.gov/image/0302063/0302063~medium.jpg"
-  title="I bypassed Ntschools. Get Good"
-  />
-</main>
-</html>
-
-<style>
-    title {
-      display: inline;
-      color: rgb(0, 255, 162);
-    }
-    body {background-color: rgb(88, 93, 114);}
-    h1 {
-      color: rgb(192, 254, 255);
-    }
-    </style>
+<Layout title="YT"></Layout>
+  <main>
+    <a href="/Portfolio/index"><i class="si-home" style="font-size: 32px;"></i></a>
+      <script>
+          if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+          } else {
+            document.documentElement.classList.remove('dark')
+          }
+          
+          // Whenever the user explicitly chooses light mode
+          localStorage.theme = 'light'
+          
+          // Whenever the user explicitly chooses dark mode
+          localStorage.theme = 'dark'
+          
+          // Whenever the user explicitly chooses to respect the OS preference
+          localStorage.removeItem('theme')
+        </script>
+    <YouTube
+    id="dQw4w9WgXcQ"
+    poster="https://images-assets.nasa.gov/image/0302063/0302063~medium.jpg"
+    title="I bypassed Ntschools. Get Good"
+    />
+  </main>
+</Layout>
