@@ -1,0 +1,40 @@
+<html class="dark">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+      ContoSearch
+  </title>
+</head>
+<main>
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark')
+        } else {
+          document.documentElement.classList.remove('dark')
+        }
+        
+        // Whenever the user explicitly chooses light mode
+        localStorage.theme = 'light'
+        
+        // Whenever the user explicitly chooses dark mode
+        localStorage.theme = 'dark'
+        
+        // Whenever the user explicitly chooses to respect the OS preference
+        localStorage.removeItem('theme')
+      </script>
+    <h1>
+        WIP. App download links and descriptions to be added.
+    </h1>
+</main>
+</html>
+
+<style>
+    title {
+      display: inline;
+      color: rgb(0, 255, 162);
+    }
+    body {background-color: rgb(88, 93, 114);}
+    h1 {
+      color: rgb(192, 254, 255);
+    }
+    </style>
