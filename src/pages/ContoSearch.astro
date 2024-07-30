@@ -4,6 +4,7 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="ContoSearch"></Layout>
   <main>
     <a href="/Portfolio/index"><i class="gg-home"></i></a>
+    <br>
     <script>
     if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       document.documentElement.classList.add('dark')
