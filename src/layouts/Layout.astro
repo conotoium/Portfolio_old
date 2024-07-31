@@ -38,9 +38,11 @@ import { ViewTransitions } from 'astro:transitions';
 			white 60%
 		);
 	}
-
+	
 	title {
     	display: inline;
+		padding: 1rem;
+		gap:2rem;
     	color: rgb(0, 255, 162);
   	}
   	body {background-color: rgb(1, 17, 79);}
@@ -60,9 +62,15 @@ import { ViewTransitions } from 'astro:transitions';
 			monospace;
 	}
 	.link-card-grid {
-		display: grid;
+		display: inline-grid;
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
+		gap:2rem;
+		padding: 1rem;
 	}
+
+	.text-title {
+		padding: 1rem;
+		gap:2.5rem;
+	}
+
 </style>
