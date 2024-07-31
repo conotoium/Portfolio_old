@@ -2,8 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 ---
 <Layout title="Apps"></Layout>
-  <main>
-    <a href="/Portfolio/index"><i class="gg-home"></i></a>
+  <main transition:animate="slide">
+    <a href="/Portfolio"><i class="gg-home"></i></a>
      <script>
           if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark')
