@@ -15,6 +15,7 @@ import { ViewTransitions } from 'astro:transitions';
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link href="https://css.gg/css" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 		<ViewTransitions />
 		<title>{title}</title>
 	</head>
@@ -23,6 +24,9 @@ import { ViewTransitions } from 'astro:transitions';
 	</body>
 </html>
 <style is:global>
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 	:root {
 		--accent: 136, 58, 234;
 		--accent-light: 224, 204, 250;

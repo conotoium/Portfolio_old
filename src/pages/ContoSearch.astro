@@ -3,27 +3,17 @@ import Layout from '../layouts/Layout.astro';
 ---
 <Layout title="ContoSearch"></Layout>
   <main>
-    <a href="/Portfolio"><i class="gg-home"></i></a>
-    <br>
-    <script>
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark')
-    } else {
-      document.documentElement.classList.remove('dark')
-    }
-    
-    // Whenever the user explicitly chooses light mode
-    localStorage.theme = 'light'
-    
-    // Whenever the user explicitly chooses dark mode
-    localStorage.theme = 'dark'
-    
-    // Whenever the user explicitly chooses to respect the OS preference
-    localStorage.removeItem('theme')
-  </script>
+  <div class="m-3 ...">
+    <a href="/Portfolio"><span class="material-symbols-outlined">
+      home
+      </span>
+    </a>
+  </div>
+  <div>
   <script async src="https://cse.google.com/cse.js?cx=b569a97257cea4710">
   </script>
   <div class="gcse-search"></div>
+  </div>
   </main>
 </Layout>
 
