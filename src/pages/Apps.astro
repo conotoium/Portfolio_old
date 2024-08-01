@@ -1,11 +1,24 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
 ---
 <Layout title="Apps"></Layout>
   <main transition:animate="slide">
-    <a href="/Portfolio"><i class="gg-home"></i></a>
-    <h1>
-      WIP. App download links and descriptions to be added.
-    </h1>
+    <div class="m-3 ...">
+      <a href="/Portfolio"><span class="material-symbols-outlined">
+        home
+        </span>
+      </a>
+    </div>
+    <div>
+      <ul role="list" class="link-card-grid">
+        <Card
+          href="/Portfolio"
+          title="WIP"
+          body="Apps page is a WIP"
+        />
+      </ul>
+
+    </div>
   </main>
 </Layout>
